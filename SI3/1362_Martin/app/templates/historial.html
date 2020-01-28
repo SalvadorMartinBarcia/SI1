@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock%}
+
+{% block content %}
+<form action="" method="post" name="saldo" novalidate>
+    <a href="">Tienes: {{ dinero }}€</a>
+    <input class="saldo" name="saldo" type="text" placeholder="Numero entero: 13">
+    <button class="saldoB" type="submit" onclick="">
+        Aumentar Saldo
+    </button>
+</form>
+<table>
+    <tr>
+        <th>Pelicula</th>
+        <th>Director</th>
+        <th>Precio</th>
+        <th>Fecha</th>
+    </tr>
+    {% for item in historial %}
+    <tr>
+        <td>{{ item.titulo }}</td>
+        <td>{{ item.director }}</td>
+        <td>{{ item.precio }}€</td>
+        <td>{{ item.fecha }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

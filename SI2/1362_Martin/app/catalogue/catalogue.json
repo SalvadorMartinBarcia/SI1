@@ -1,0 +1,45 @@
+{ "peliculas": 
+  [ 
+    { 
+			"id": 1,
+			"titulo": "Reservoir Dogs",
+      "poster": "fotos/reservoir-dogs.jpg",
+      "director": "Quentin Tarantino",
+      "sinopsis": "Seis criminales profesionales son contratados para robar en un almacén de diamantes, pero la policía aparece inesperadamente en el momento del atraco. Algunos miembros de la banda mueren en el enfrentamiento y otros logran huir, reagrupándose en un almacén y dispuestos a descubrir quién los delató.",
+      "precio": 10,
+      "categoria": "Policiaca",
+      "anyo": 1992
+    },
+    { 
+			"id": 2,
+			"titulo": "Your Name",
+      "poster": "fotos/Kiminonawa.jpg",
+      "director": "Makoto Shinkai",
+      "sinopsis": "El joven Taki vive en Tokio: la joven Mitsuha, en un pequeño pueblo en las montañas. Durante el sueño, los cuerpos de ambos se intercambian. Recluidos en un cuerpo que les resulta extraño, comienzan a comunicarse.",
+      "precio": 15,
+      "categoria": "Animacion",
+      "anyo": 2016
+    },
+    { 
+			"id": 3,
+			"titulo": "Pesadilla antes de Navidad",
+      "poster": "fotos/Pesadilla_antes_de_Navidad.jpg",
+      "director": "Henry Selick",
+      "sinopsis": "El rey de las calabazas en el pueblo de las brujas planea secuestrar a Santa Claus y al mismo tiempo llevar pánico en vez de alegría.",
+      "precio": 11,
+      "categoria": "Animacion",
+      "anyo": 1993
+    },
+    { 
+			"id": 4,
+			"titulo": "Avatar",
+      "poster": "fotos/Avatar.jpg",
+      "director": "James Cameron",
+      "sinopsis": "En un exuberante planeta llamado Pandora viven los Na'vi, seres que aparentan ser primitivos pero que en realidad son muy evolucionados. Debido a que el ambiente de Pandora es venenoso, los híbridos humanos/Na'vi, llamados Avatares, están relacionados con las mentes humanas, lo que les permite moverse libremente por Pandora. Jake Sully, un exinfante de marina paralítico se transforma a través de un Avatar, y se enamora de una mujer Na'vi.",
+      "precio": 18,
+      "categoria": "Accion",
+      "anyo": 2009
+    }
+  ]
+  
+}

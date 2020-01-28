@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock%}
+
+{% block content %}
+<div class="DetallePeliculas">
+        <img class="fotoDetalle" src="static/{{ "fotos/Kiminonawa.jpg" }}" alt="{{ "fotos/Kiminonawa.jpg" }}">
+        <br><br>
+        <h1>
+          {{peli.titulo}}
+        </h1>
+        <br><br><br>
+        <p class="p1">Año: {{peli.anyo}}</p><br>
+        <p class="p1">Categoria: 
+          {% for genero in generos %}
+          {{genero}}
+          {% endfor %}
+        </p><br><br>
+        <form onsubmit="{{ url_for('ancarro', id = peli.id) }}" method="POST">
+        <select name="product">
+            {% for producto in productos %}
+            <option value="{{ producto.description }}">{{ producto.description }}: {{producto.precio}}€</option>
+            {% endfor %}
+        </select>
+      </div>
+    </div>
+    <button class="botonAceptar" type="submit">Añadir al Carro</button>
+    </form>
+{% endblock %}

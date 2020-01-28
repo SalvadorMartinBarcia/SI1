@@ -1,0 +1,48 @@
+{
+    "peliculas": [
+        {
+            "director": "Makoto Shinkai",
+            "anyo": 2016,
+            "titulo": "Your Name",
+            "sinopsis": "El joven Taki vive en Tokio: la joven Mitsuha, en un peque\u00f1o pueblo en las monta\u00f1as. Durante el sue\u00f1o, los cuerpos de ambos se intercambian. Recluidos en un cuerpo que les resulta extra\u00f1o, comienzan a comunicarse.",
+            "poster": "fotos/Kiminonawa.jpg",
+            "id": 2,
+            "fecha": "28/10/2019 16:18:06",
+            "precio": 15,
+            "categoria": "Animacion"
+        },
+        {
+            "director": "Henry Selick",
+            "anyo": 1993,
+            "titulo": "Pesadilla antes de Navidad",
+            "sinopsis": "El rey de las calabazas en el pueblo de las brujas planea secuestrar a Santa Claus y al mismo tiempo llevar p\u00e1nico en vez de alegr\u00eda.",
+            "poster": "fotos/Pesadilla_antes_de_Navidad.jpg",
+            "id": 3,
+            "fecha": "28/10/2019 16:18:06",
+            "precio": 11,
+            "categoria": "Animacion"
+        },
+        {
+            "director": "Henry Selick",
+            "anyo": 1993,
+            "titulo": "Pesadilla antes de Navidad",
+            "sinopsis": "El rey de las calabazas en el pueblo de las brujas planea secuestrar a Santa Claus y al mismo tiempo llevar p\u00e1nico en vez de alegr\u00eda.",
+            "poster": "fotos/Pesadilla_antes_de_Navidad.jpg",
+            "id": 3,
+            "fecha": "28/10/2019 18:43:31",
+            "precio": 11,
+            "categoria": "Animacion"
+        },
+        {
+            "fecha": "29/10/2019 21:28:24",
+            "director": "James Cameron",
+            "anyo": 2009,
+            "titulo": "Avatar",
+            "sinopsis": "En un exuberante planeta llamado Pandora viven los Na'vi, seres que aparentan ser primitivos pero que en realidad son muy evolucionados. Debido a que el ambiente de Pandora es venenoso, los h\u00edbridos humanos/Na'vi, llamados Avatares, est\u00e1n relacionados con las mentes humanas, lo que les permite moverse libremente por Pandora. Jake Sully, un exinfante de marina paral\u00edtico se transforma a trav\u00e9s de un Avatar, y se enamora de una mujer Na'vi.",
+            "poster": "fotos/Avatar.jpg",
+            "id": 4,
+            "categoria": "Accion",
+            "precio": 18
+        }
+    ]
+}

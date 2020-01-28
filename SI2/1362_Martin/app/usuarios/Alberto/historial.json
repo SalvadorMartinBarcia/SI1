@@ -1,0 +1,37 @@
+{
+    "peliculas": [
+        {
+            "director": "Quentin Tarantino",
+            "id": 1,
+            "fecha": "30/10/2019 11:22:46",
+            "categoria": "Policiaca",
+            "precio": 10,
+            "poster": "fotos/reservoir-dogs.jpg",
+            "titulo": "Reservoir Dogs",
+            "sinopsis": "Seis criminales profesionales son contratados para robar en un almac\u00e9n de diamantes, pero la polic\u00eda aparece inesperadamente en el momento del atraco. Algunos miembros de la banda mueren en el enfrentamiento y otros logran huir, reagrup\u00e1ndose en un almac\u00e9n y dispuestos a descubrir qui\u00e9n los delat\u00f3.",
+            "anyo": 1992
+        },
+        {
+            "director": "Makoto Shinkai",
+            "id": 2,
+            "sinopsis": "El joven Taki vive en Tokio: la joven Mitsuha, en un peque\u00f1o pueblo en las monta\u00f1as. Durante el sue\u00f1o, los cuerpos de ambos se intercambian. Recluidos en un cuerpo que les resulta extra\u00f1o, comienzan a comunicarse.",
+            "poster": "fotos/Kiminonawa.jpg",
+            "precio": 15,
+            "categoria": "Animacion",
+            "titulo": "Your Name",
+            "anyo": 2016,
+            "fecha": "30/10/2019 13:01:21"
+        },
+        {
+            "director": "Makoto Shinkai",
+            "id": 2,
+            "sinopsis": "El joven Taki vive en Tokio: la joven Mitsuha, en un peque\u00f1o pueblo en las monta\u00f1as. Durante el sue\u00f1o, los cuerpos de ambos se intercambian. Recluidos en un cuerpo que les resulta extra\u00f1o, comienzan a comunicarse.",
+            "poster": "fotos/Kiminonawa.jpg",
+            "precio": 15,
+            "categoria": "Animacion",
+            "titulo": "Your Name",
+            "anyo": 2016,
+            "fecha": "30/10/2019 13:01:21"
+        }
+    ]
+}

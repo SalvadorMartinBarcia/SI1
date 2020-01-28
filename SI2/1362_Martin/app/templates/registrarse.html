@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock%}
+
+{% block content %}
+    <div class="CamposReg">
+        <h1>Registro</h1><br><br>
+        {% if errormsg %}
+            <p class="error">{{ errormsg }}</p>
+        {% endif%}
+        <form action="" method="post" name="CamposReg" novalidate>
+            <p class="p2">Nombre de Usuario</p>
+            <input class="In" name="NombUsInname" type="text">
+            <p class="p2">Contraseña</p>
+            <input class="In" name="ContInname" id="ContInname" type="password">
+            <br>
+            <meter id="fortaleza" min="0" max="99" high="50" value="0" optimum="99"></meter>
+            <br>
+            <p class="p2">Confirmar contraseña</p>
+            <input class="In" name="Cont2" type="password">
+            <p class="p2">Email</p>
+            <input class="In" name="EmaiIlnname" type="email">
+            <p class="p2">Tarjeta de Credito</p>
+            <input class="In" name="TarInname" type="text"><br><br>
+            <button type="submit" onclick="return validacion()">
+                Aceptar
+            </button>
+        </form>
+    </div>
+{% endblock %}

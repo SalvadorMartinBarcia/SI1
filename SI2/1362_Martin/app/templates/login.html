@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock%}
+
+{% block content %}
+    <div class="CamposReg">
+        <h1>Iniciar Sesion</h1><br><br>
+        <form action="" method="post" novalidate>
+            <p class="p2">Nombre de Usuario</p>
+            {% if nombre %}
+            <input name="username" type="text" placeholder="Enter username" value="{{ nombre }}"><br>
+            {% else %}
+            <input name="username" type="text" placeholder="Enter username"><br>
+            {% endif %}
+            <p class="p2">Contraseña</p>
+            <input name="password" type="password" placeholder="Enter password"><br>
+            <input type="submit" value="Login"><br><br>
+        </form>
+    </div>
+{% endblock %}

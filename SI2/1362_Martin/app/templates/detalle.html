@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock%}
+
+{% block content %}
+<div class="DetallePeliculas">
+        <h1>
+          {{peli.titulo}}
+        </h1>
+        <img class="fotoDetalle" src="static/{{ peli.poster }}" alt="{{ peli.poster }}">
+        <br><br><br><br>
+        <p class="p1">Año: {{peli.anyo}}</p><br>
+        <p class="p1">Categoria: {{peli.categoria}}</p><br><br>
+        <h2>
+          Sinopsis:
+        </h2><br><br>
+        <p class="p1">{{peli.sinopsis}}</p> <br><br><br><br>
+        <p class="p1">{{peli.precio}}€</p>
+      </div>
+    </div>
+    <button class="botonAceptar" type="submit" onclick="window.location.href='{{ url_for('ancarro', id = peli.id) }}'">Añadir al Carro</button>
+{% endblock %}

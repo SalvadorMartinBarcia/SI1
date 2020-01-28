@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}- PeliculasYonkis</title>
+    <!-- Uso de url_for para obtener la ruta de elementos de la página -->
+    <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='style.css') }}/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <SCRIPT src={{ url_for('static', filename='script.js') }}></SCRIPT>  
+</head>
+<body onload="setInterval('getaleatorio(\'{{ url_for('genRand') }}\')', 3000);">
+    <div id="contenedor">
+
+        <header id="cabecera">
+            <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='fotos/logo.png') }}" alt="peliculasyonkis" class="logo"></a>
+            {% if session['usuario'] %}
+            <a href="" class="registrado">Usuario: {{ session['usuario'] }}</a>
+            {% else %}
+            <a href="" class="registrado">Anónimo</a>
+            {% endif%}
+            <a href="{{ url_for('carro') }}"> <img src="{{ url_for('static', filename='fotos/Foto_Carro.png') }}" alt="carro" class="carro"> </a>
+        </header>
+
+        <div id="MenuLateral">
+        <ul class="menu">
+            <li><a href="{{ url_for('index') }}">Inicio</a></li>
+            <li><a href="{{ url_for('carro') }}">Carro</a></li>
+
+            {% if not session['usuario'] %}
+            <li><a href="{{ url_for('registrarse') }}" class="Registrarse">Registrarse</a></li>
+            <li><a href="{{ url_for('login') }}" class="InicioSes">Iniciar Sesion</a></li>
+            {% else %}
+            <li><a href="{{ url_for('historial') }}">Historial</a></li>
+            <li><a href="{{ url_for('logout') }}">Cerrar Sesion</a></li>
+            {% endif%}
+            <br>
+            <li class="aleatorio">Usuarios <p id="rand"></p></li>
+        </ul>
+        </div>
+
+        <div id="contenido">
+            {% block content%} {% endblock %}
+        </div>
+
+        <footer id="pie">
+        <p>Se prohibe la distribucion de cualquier contenido de esta pagina</p>
+        </footer>
+
+    </div>
+    
+</body>
+</html>

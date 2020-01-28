@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock%}
+
+{% block content %}
+<table>
+    <tr>
+        <th>Pelicula</th>
+        <th>Director</th>
+        <th>Precio</th>
+        <th>Eliminar</th>
+    </tr>
+    {% for item in movies %}
+    <tr>
+        <td>{{ item.titulo }}</td>
+        <td>{{ item.director }}</td>
+        <td>{{ item.precio }}€</td>
+        <td><button class="" type="submit" onclick="window.location.href='{{ url_for('elimcarro', id = item.id) }}'">Eliminar</button></td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="">Precio total: {{ precio }}€</a>
+<button class="botonAceptar" type="button" onclick="window.location.href='{{ url_for('confcarro') }}'">Confirmar compra</button>
+{% endblock %}
